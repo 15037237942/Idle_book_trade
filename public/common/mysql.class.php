@@ -4,7 +4,7 @@ class opmysql{
    private $host = '127.0.0.1';  //服务器地址
    private $name = 'root';       //登录账号
    private $pwd = '';            //登录密码
-   private $dBase = 'qzss';      //数据库名称
+   private $dBase = 'qzl_idle_book_trade';      //数据库名称
    private $conn = '';           //数据库连接资源
    private $result = '';         //结果集
    private $msg = '';            //返回结果

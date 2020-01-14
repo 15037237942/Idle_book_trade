@@ -18,7 +18,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>千纸诗书</title>
+   <title>千纸诗书</title>
+   <link rel="shortcut icon" href="../public/img/favicon.ico" />
 	<link rel="stylesheet" href="public/css/index.css">
 </head>
 <body>

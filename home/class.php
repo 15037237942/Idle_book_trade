@@ -31,7 +31,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>图书类别</title>
+   <title>图书类别</title>
+   <link rel="shortcut icon" href="../public/img/favicon.ico" />
 	<link rel="stylesheet" href="public/css/index.css">
 	<link rel="stylesheet" href="public/css/high_search.css" />
 </head>

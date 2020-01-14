@@ -7,6 +7,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>index</title>
+	<link rel="shortcut icon" href="../public/img/favicon.ico" />
 	<style>
 		*{
 			margin: 0px;

@@ -10,6 +10,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>用户登录</title>
+	<link rel="shortcut icon" href="../public/img/favicon.ico" />
 	<link rel="stylesheet" href="public/css/regist.css" />
 	<script src="public/js/jquery-1.11.3.js"></script>
 	<script src="../public/js/toast.js"></script>

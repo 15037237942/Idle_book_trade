@@ -8,6 +8,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>购物车</title>
+	<link rel="shortcut icon" href="../../public/img/favicon.ico" />
 	<link rel="stylesheet" href="../public/css/index.css">
 </head>
 <body>

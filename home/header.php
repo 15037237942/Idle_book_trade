@@ -8,6 +8,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="../public/img/favicon.ico" />
 		<link rel="stylesheet" href="<?php echo $root?>/home/public/css/页头.css" />
 		<link rel="stylesheet" href="<?php echo $root?>/home/public/css/bootstrap.css"> 
 		<script src="<?php echo $root?>/home/public/js/bootstrap.min.js"></script>

@@ -5,6 +5,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8" /> 
+		<link rel="shortcut icon" href="../public/img/favicon.ico" />
 		<link rel="stylesheet" href="public/css/high_search.css" />
 		<title></title>
 	</head>
