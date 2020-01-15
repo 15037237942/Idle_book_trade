@@ -20,10 +20,13 @@
 				<ul>
 					<li><a href="#">图书类别</a>  |</li>
 					<li><a href="#">我的书库</a>  |</li>
-					<li><a href="#">发布旧书</a>  |</li>
-					<li><a href="#">每日推荐</a>  |</li>
-					<li><a href="#">消息中心</a>  |</li>
-					<li><a href="#">个人中心</a></li>
+					<li><a href="<?php echo $root?>/home/saleadd.php">发布旧书</a>  |</li>
+					<li><a href="<?php echo $root?>/home/demo.html">每日推荐</a>  |</li>					
+					<li><a href="<?php echo $root?>/home/person/index.php">个人中心</a>  |</li>
+					<?php
+						if($root != "admin")
+						echo "<li><a href='../admin/index.php'>后台管理</a></li>"
+					?>
 				</ul>
 			</nav>
 			</div>

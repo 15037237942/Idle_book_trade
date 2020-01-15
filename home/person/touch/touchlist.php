@@ -7,6 +7,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>查看联系方式</title>
+	<link rel="shortcut icon" href="../../../public/img/favicon.ico" />
 	<link rel="stylesheet" href="../../public/css/index.css">
 </head>
 <body>

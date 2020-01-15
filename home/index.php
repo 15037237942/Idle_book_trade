@@ -8,6 +8,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>千纸诗书</title>
+	<link rel="shortcut icon" href="../public/img/favicon.ico" />
 	<link rel="stylesheet" href="public/css/index.css">
 	<link rel="stylesheet" href="public/css/index_1.css" />
 	<link rel="stylesheet" href="public/css/animate.min.css"> 
@@ -110,7 +111,7 @@
 		
 		
 		 <?php
-            $sqlBook1 = "select * from book where recommend=1 and shelf=1 order by id desc limit 0,6";
+            $sqlBook1 = "select * from book where recommend=1 and shelf=1 order by id desc limit 0,15";
 			$rstBook1 = mysqli_query($con,$sqlBook1);				   
 			if(!$rstBook1){
 				exit();
@@ -127,9 +128,9 @@
 					</div>
 					<div class="tuijian-wenzi">
 					<span class="tuijian-wenzi1">书名：</span>
-					<span class="tuijian-wenzi2"><?php echo $tuijie['name']?></span><br />
+					<span class="tuijian-wenzi2"><?php echo $tuijie['name']?></span><br/>
 					<span class="tuijian-wenzi1">作者：</span>
-					<span class="tuijian-wenzi2"><?php echo $tuijie['writer']?></span><br />
+					<span class="tuijian-wenzi2"><?php echo $tuijie['writer']?></span><br/>
 					<span class="tuijian-wenzi1">内容简介：</span>
 					<span class="tuijian-wenzi2"><?php echo $tuijie['info']?></span>
 					</div>

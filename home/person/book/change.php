@@ -12,7 +12,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>添加出售图书</title>
+    <title>添加出售图书</title>
+    <link rel="shortcut icon" href="../../../public/img/favicon.ico" />
 	<link rel="stylesheet" href="../../public/css/index.css">
 </head>
 <body>

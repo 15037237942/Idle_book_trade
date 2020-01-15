@@ -5,7 +5,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>用户注册</title>
+  <title>用户注册</title>
+  <link rel="shortcut icon" href="../public/img/favicon.ico" />
 	<link rel="stylesheet" href="public/css/regist.css" />
 	<link rel="stylesheet" href="public/css/u_dlzc.css">
   <script src="public/js/jquery-1.11.3.js"></script>

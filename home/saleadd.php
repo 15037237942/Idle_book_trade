@@ -9,7 +9,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>发布旧书</title>
+  <title>发布旧书</title>
+  <link rel="shortcut icon" href="../public/img/favicon.ico" />
 	<link rel="stylesheet" href="public/css/发布旧书.css">
 	<link rel="stylesheet" href="public/css/animate.min.css">
 </head>

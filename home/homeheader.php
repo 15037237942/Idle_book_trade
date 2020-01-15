@@ -9,6 +9,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>首页</title>
+		<link rel="shortcut icon" href="../public/img/favicon.ico" />
 		<script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
 		<link rel="stylesheet" href="public/css/index_1.css" />
 		<!-- <?php echo $root?> -->
