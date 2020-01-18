@@ -3,6 +3,7 @@
 <head>
     <title>用户登录</title>
     <meta charset="UTF-8">
+	<link rel="shortcut icon" href="../public/img/favicon.ico" />
     <link rel="stylesheet" href="public/css/login.css" />
 </head>
 
