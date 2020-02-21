@@ -114,6 +114,7 @@ window.onload = function(){
     };
 
     $('regbtn').onclick = function(){       //Ajax将用户信息以url的形式传给reginsert.php
+        
         url = 'reginsert.php?username='+$('regname').value
             +'&pwd='+$('regpwd1').value+ '&realname='+$('realname').value;
         var xhr = new XMLHttpRequest();
@@ -134,4 +135,4 @@ window.onload = function(){
         xhr.send(null);
     }
 
-};
+}; 

@@ -120,7 +120,14 @@ input::-webkit-input-placeholder{
 	width: 200px;
 	height: 25px;
 }
+/*   tips */
+#u_error{
+    color:red;
+}
 
+#u_success{
+    color:green;
+}
 /* #regbtn{
 	position: absolute;
 	left: 62%;

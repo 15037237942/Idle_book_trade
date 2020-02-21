@@ -8,8 +8,6 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>footer</title>
-<!--		<link rel="stylesheet" href="public/css/index_1.css" />-->
 		<link rel="stylesheet" href="<?php echo $root?>/home/public/css/foot.css" />
 	</head>
 	<body>  
@@ -30,9 +28,13 @@
 				</ul>
 			</nav>
 			</div>
-			<div class="foot1">
+			<div class="foot1">			
 			<p>
-				Copyright © 2020 WAN GUOYU. All rights reserved.
+				Copyright © 
+				<?php
+					echo  date('Y');
+				?>	
+				 WAN GUOYU. All rights reserved.
 			</p>
 			</div>
 		</div>

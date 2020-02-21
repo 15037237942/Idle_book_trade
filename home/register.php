@@ -7,13 +7,17 @@
 	<meta charset="UTF-8">
   <title>用户注册</title>
   <link rel="shortcut icon" href="../public/img/favicon.ico" />
-	<link rel="stylesheet" href="public/css/regist.css" />
+	<link rel="stylesheet" href="public/css/regist.css" /> 
 	<link rel="stylesheet" href="public/css/u_dlzc.css">
   <script src="public/js/jquery-1.11.3.js"></script>
   <script src="../public/js/toast.js"></script>
   <script src="public/js/register.js"></script>
 </head>
 <body>
+  <!-- start homehead -->
+  <?php 
+    include 'homeheader.php';
+  ?>
 	<div class="main">
 		<div class="bg">  
 			  <form id="register" action="#">
@@ -69,6 +73,10 @@
           </table>
         </form>
     </div> 		
-	</div>	
+	</div>
+  <!-- start foot -->
+	<?php 	   
+		include 'footer.php';
+	?>	
 </body>
 </html>

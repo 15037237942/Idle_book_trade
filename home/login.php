@@ -17,6 +17,10 @@
   <script src="public/js/login.js"></script>
 </head>
 <body>
+<!-- start homehead -->
+  <?php 
+    include 'homeheader.php';
+  ?>
 	<div class="main">
 		<div class="denglubiaodan">  
         <ul>
@@ -36,5 +40,9 @@
 		</div>	
 		<div class="nav"></div>
 	</div>	
+	<!-- start foot -->
+	<?php 	   
+		include 'footer.php';
+	?>	
 </body>
 </html>

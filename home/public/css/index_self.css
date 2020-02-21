@@ -1,0 +1,127 @@
+#head {
+	height: 185px;
+}
+/*--logo--*/
+.logo-ref {
+	display: block;
+}
+.logo-img {
+	float: left;
+}
+.logo-title {
+	float: right;
+    margin-left: 10px;
+    line-height: 80px;
+    font-family: "华文行楷";
+    font-size: 36px;
+    color: #00405d;
+}
+/*--menu--*/
+.menu ul {
+	height: 40px;
+}
+.menu li {
+    display: inline-block;
+    cursor: pointer;
+}
+.menu li:hover {
+    font-weight: 700;
+	color: #000000;	
+	border-bottom: 2px solid #000000;
+}
+.menu li:active {
+    font-weight: 700;
+    color: #000000;
+}
+
+
+input::-webkit-input-placeholder { /* WebKit browsers */ 
+	color: white; 
+} 
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+	color: white; 
+} 
+input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+	color: white; 
+} 
+input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+	color: white; 
+} 
+/*--推荐--*/
+.featured-first-head {
+	margin: 20px auto;
+}
+.featured-first-title {
+	float: left;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	color: #777;
+	margin-bottom: 10px;
+}
+.featured-first-right {	
+	float: right;
+	text-decoration: underline;
+	line-height: 46px;
+}
+
+.recommend {
+	margin-left: -16px;
+	margin-top: -20px;
+}
+.recommend a {
+	display: block;
+}
+.recommend-content:hover {
+	box-shadow: 2px 2px 2px #9b9b9b;
+	-webkit-box-shadow: 2px 2px 2px #9b9b9b;
+	transform: scale(0.9,0.9);
+}
+.recommend-content {
+	background: #e5f7f8;
+	width: 350px;
+	height: 400px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.tuijian-book {
+	background:url(../img/recommend-bg.png);
+	width: 350px;
+	height: 200px;
+}
+.tuijian-book-img {
+	width: 170px;
+	height: 220px;
+	margin-left: 90px;
+	-webkit-box-shadow: 2px 2px 2px #737373;
+   	-moz-box-shadow:2px 2px 2px #737373;
+    box-shadow: 2px 2px 2px #737373;
+}
+.tuijian-book-content {
+	margin: 20px 30px;
+}
+.tuijian-book-title {
+	display: inline-block;
+	float: left;
+	font-family: "黑体";
+	color: #96acac;
+}
+.tuijian-detail {	
+	color: #000000;	
+}
+.tuijian-book-name,.tuijian-book-author  {
+	width: 230px;	
+	height: inherit;
+	white-space: nowrap;	
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+.tuijian-book-introduce {
+	width: 200px;	
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+	/* （希望显示N行-webkit-line-clamp的变为N） */
+	-webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
