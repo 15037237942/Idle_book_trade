@@ -19,10 +19,11 @@
 	<link rel="stylesheet" href="../public/css/index.css">
 </head>
 <body>
-	<div class="main">
-		<?php 
+<div class="all">
+	<?php 
 			include '../header.php';
-		?>
+	?>
+	<div class="main">		
 		<div class="nav"></div>
 		<div class="content">
 			<div class="floor">
@@ -58,10 +59,10 @@
 				</div>
 			</div>
 		</div>	
-
-		<?php 
+	</div>
+</div>	
+	<?php 
 			include '../footer.php';
-		?>
-	</div>	
+	?>
 </body>
 </html>

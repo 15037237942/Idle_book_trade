@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="../../public/css/index.css">
 </head>
 <body>
+<div class="all">
 	<div class="main">
 		<?php
 			include '../../header.php';
@@ -49,7 +50,7 @@
 					</div>
 
 					<div class='floorFooter2Right'>
-                      <div class='personUseradd'>
+              <div class='personUseradd'>
                         <form action='userupdate.php' method='post' enctype='multipart/form-data'>
                             <p>用户名:</p>
                             <p><input type="text" class="input-k" name='username' value='<?php echo $row['username']?>'></p>
@@ -95,18 +96,19 @@
                             <input type="hidden" name="imgsrc" value='<?php echo $row['img']?>'>
 
                             <p><input type="submit" value="修改" class="input-k"></p>
-                    	</form>
-                      </div>
-                     </div>
+              </form>
+              </div>
+          </div>
 
-                     <div class='clear'></div>
-                    </div>
-                   </div>
-                  </div>
-
+          <div class='clear'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
         <?php
            include '../../footer.php';
         ?>
-     </div>
+     
    </body>
 </html>

@@ -12,8 +12,8 @@
 	<body>
 		<div id="search">				
 			<form action="matchsearch.php" method="post">
-			    <input placeholder=" 请输入图书名" type="text" name="name" >
-			    <input placeholder=" 请输入作者名" type="text" name="writer">
+			    <input placeholder="请输入图书名" type="text" name="name" class="search_text">
+			    <input placeholder="请输入作者名" type="text" name="writer" class="search_text">
 				<input name="search" type="submit" value="高级搜索" class="btn-search"/>
 			</form>			
 		</div>

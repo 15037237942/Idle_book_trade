@@ -38,3 +38,7 @@ a{
 .main form p{
 	margin-bottom:10px;
 }
+
+::-webkit-scrollbar{width: 6px;height: 6px;}
+::-webkit-scrollbar-thumb{background-color: #cfcfd2;border-radius: 8px;background-clip: padding-box;min-height: 28px;}
+::-webkit-scrollbar-track-piece{background: #f3f3f3;}

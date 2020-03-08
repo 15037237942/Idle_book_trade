@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="../../public/css/index.css">
 </head>
 <body>
+<div class="all">
 	<div class="main">
 		<?php
 			include '../../header.php';
@@ -132,10 +133,10 @@
 				</div>
 			</div>
 		</div>
-
-		<?php
-			include '../../footer.php';
-		?>
-	</div>
+    </div>
+</div>
+    <?php
+		include '../../footer.php';
+	?>
 </body>
 </html>

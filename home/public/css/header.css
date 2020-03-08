@@ -100,28 +100,7 @@ body{
 .headernav .close{
 	height: 50px;
 }
-/*.headernav .search a,
-.headernav .list a,
-.headernav .close a{
-	width:18px;
-	height: 18px;
-	margin:16px 30px 0 30px;
-	transition: 0.6s;
-	-webkit-transition: 0.6s;
-	-o-transition: 0.6s;
-	-ms-transition: 0.6s;
-	-moz-transition: 0.6s;
-	background: url(../img/search.png) no-repeat;
-}
-.headernav .search a:hover{
-	background: url(../img/search1.png) no-repeat;
-}
-.headernav .list a{
-	background: url(../img/car.png) no-repeat;
-}
-.headernav .list a:hover{
-	background: url(../img/car-.png) no-repeat;
-}*/
+
 /* 搜素框 */
 .search_main{
 	position: absolute;

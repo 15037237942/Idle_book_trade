@@ -3,7 +3,17 @@
 	margin:0;
 	font-family: "黑体";
 }
-
+html,body {
+	height: 100%;
+	padding:0;
+	margin:0;
+}
+.all {
+	min-height: 100%;
+	padding:0;
+	margin:0;
+	margin-bottom: -115px;
+}
 a{
 	text-decoration:none;
 }
@@ -98,6 +108,7 @@ a{
 	height:250px;
 	padding-top:15px;	
 	padding-bottom:5px;	
+	/* margin-bottom: 50px; */
 }
 
 .floorFooter2{
@@ -106,7 +117,9 @@ a{
 	font-family: "黑体";
 	font-size: 13px;
 }
-
+.blanck_row {
+	height: 50px;
+}
 .floorFooter2 .shop{
 	margin-bottom:30px;
 }

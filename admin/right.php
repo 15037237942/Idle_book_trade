@@ -11,12 +11,13 @@
 			font-family:"黑体";
 		}
 		body{
-			padding:15px;
+			padding:10px;
+			overflow:hidden;
 		}
 	</style>
 
 </head>
 <body>
-	<img src="public/img/welc.jpg" width="100%">
+	<img src="public/img/welc.jpg" width="100%" height="70%">
 </body>
 </html>

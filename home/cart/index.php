@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="../public/css/index.css">
 </head>
 <body>
+<div class="all">
 	<div class="main">
 		<?php 
 			include '../header.php';
@@ -172,12 +173,14 @@
               	         <input type="submit" value="提交订单" class="commit">
                  </div>
               </div>
-           </form>
+		   </form>
 		</div>	
-
-		<?php 
-			include '../footer.php';
-		?>
-	</div>	
+	</div>
+	
+</div>
+<div class="blanck_row"></div>	
+	<?php 
+		include '../footer.php';
+	?>
 </body>
 </html>

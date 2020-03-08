@@ -3,6 +3,9 @@
   include '../public/common/conn.php';
 
   if(isset($_POST['search'])){
+     if($_POST["name"]==""&&$_POST["writer"]==""){
+         echo '<script>location="class.php"</script>';
+     }{
     $searchinfo = "name=".$_POST["name"]."&writer=".$_POST["writer"];//搜索信息放入字符串，&连接符
     $key = explode('&',$searchinfo);//分割字符串，每项信息放入数组一个元素中
 
@@ -125,6 +128,8 @@
             }
             echo "</div>";
           }
+                  
+         }
         }
         ?>
 

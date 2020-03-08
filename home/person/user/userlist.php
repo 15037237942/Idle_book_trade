@@ -5,7 +5,7 @@
   $user_id = $_SESSION['home_userid'];
   $sql = "select * from user where id = {$user_id}";
   $rst = mysqli_query($con,$sql);
-?>i
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,10 +15,12 @@
 	<link rel="stylesheet" href="../../public/css/index.css">
 </head>
 <body>
+
+<div class="all">
+	<?php
+		include '../../header.php';
+	?>
 	<div class="main">
-		<?php
-			include '../../header.php';
-		?>
 		<div class="nav"></div>
 		<div class="content">
 			<div class="floor">
@@ -76,10 +78,10 @@
 				</div>
 			</div>
 		</div>
-
-		<?php
-			include '../../footer.php';
-		?>
 	</div>
+</div>
+	<?php
+		include '../../footer.php';
+	?>
 </body>
 </html>

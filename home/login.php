@@ -11,6 +11,7 @@
 	<meta charset="UTF-8">
 	<title>用户登录</title>
 	<link rel="shortcut icon" href="../public/img/favicon.ico" />
+	<link rel="stylesheet" href="public/css/index_style.css" />
 	<link rel="stylesheet" href="public/css/regist.css" />
 	<script src="public/js/jquery-1.11.3.js"></script>
 	<script src="../public/js/toast.js"></script>
@@ -22,23 +23,21 @@
     include 'homeheader.php';
   ?>
 	<div class="main">
-		<div class="denglubiaodan">  
-        <ul>
-            <form action="#"> 
-                <input  id="lgname" type="text"  name='username' class="inputname"
-                		v-model="inputtext.name" placeholder="请输入用户名"> <br />
-                <input  id="lgpwd" type="password" name='password' class="inputpas"
-                		v-model="inputtext.password" placeholder="请输入密码">             	
-				<input id="lgbtn" type="button" value=" ">
-			
-				<div class="zhuce">
-					<a href="<?php echo $root?>/home/register.php" class="bt-zhuce">点击注册</a>
+		<div class="wrap">
+			<div class="loginpart">
+				<div> 
+				 	<input  id="lgname" type="text"  name='username' class="inputname"
+				 			v-model="inputtext.name" placeholder="请输入用户名"> <br />
+				 	<input  id="lgpwd" type="password" name='password' class="inputpas"
+				 			v-model="inputtext.password" placeholder="请输入密码">             	
+				 	<input id="lgbtn" type="button" value=" ">
+				 
+				 	<div class="zhuce">
+				 		<a href="<?php echo $root?>/home/register.php" class="bt-zhuce">点击注册</a>
+				 	</div>
 				</div>
-           </form>
-        </ul>  
-        </div> 	
-		</div>	
-		<div class="nav"></div>
+			</div>
+		</div>			
 	</div>	
 	<!-- start foot -->
 	<?php 	   

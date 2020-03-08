@@ -1,77 +1,59 @@
-html,body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	width: 100%;
-	height: 100%;
-}
-.main {
-	background-color: #ccc;
-	width: 100%;
-	height: 100%;
-}
-
-.denglubiaodan{
-	background:url(../img/登录背景.jpg) no-repeat center;
+.loginpart{
+	position: relative;
+	background:url(../img/login-bg.jpg) no-repeat center;
 	width: 850px;
 	height: 500px;
-	margin-left: 250px;
-	margin-top: 58px;
-	
+	margin: 60px auto;
 }
 .inputname{
+	position: relative;
+	top: 200px;
+	left: 595px;
 	width: 200px;
 	height: 28px;
-	margin-left: 555px;
-	margin-top: 200px;
 	border: none;
 	outline: none;
 }
 .inputpas{
+	position: relative;
+	top: 240px;
+	left: 595px;
 	width: 200px;
 	height: 28px;
-	margin-left: 555px;
-	margin-top: 41px;
 	border: none;
 	outline: none;
 }
-input::-webkit-input-placeholder{
-            color: #8D8B8B;
-            font-family: "黑体";
-        }
-        input::-moz-placeholder{   /* Mozilla Firefox 19+ */
-            color: #8D8B8B;
-            font-family: "黑体";
-        }
-        input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
-            color: #8D8B8B;
-            font-family: "黑体";
-        }
-        input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
-            color: #8D8B8B;
-            font-family: "黑体";
-        }
-/*.bt-denglu{
-	margin-left: 500px;
-	margin-top: 35px;
-	width: 265px;
-	height:36px ;
-	background: transparent;
-	border: none;
-}*/
+input::-webkit-input-placeholder {
+	color: #8D8B8B!important;
+    font-family: "黑体"!important;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color: #8D8B8B;
+    font-family: "黑体";
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color: #8D8B8B;
+    font-family: "黑体";
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color: #8D8B8B;
+    font-family: "黑体";
+}
+
 #lgbtn{
-	margin-left: 540px;
-	margin-top: 39px;
-	width: 265px;
+	position: relative;
+	top: 308px;
+	left: 330px;
+	width: 276px;
 	height:36px ;
 	background: transparent;
 	border: none;
 	cursor: pointer;
 }
 .zhuce{
-	float: right;
-	margin-right: 148px;
-	margin-top: 10px;
+	position: relative;
+	top: 325px;
+	left: 640px;
 	font-family: "黑体";
 	font-size: 14px;
 	
@@ -80,45 +62,54 @@ input::-webkit-input-placeholder{
 	color: #8D8B8B;
 	text-decoration:none;
 }
-.bt-wangji{
+/* .bt-wangji{
 	color: #8D8B8B;
 	text-decoration:none;
 	margin-left: 50px;
-}
+} */
 
 .bg{
-	position: relative;
-	background: url(../img/注册背景.png) no-repeat center;
-	background-size: cover;
+	background: url(../img/rigist-bg.png) no-repeat center;
 	width: 100%;
 	height: 100%;	
-	/* width: 850px;
-	height: 500px; */	
-	margin: 0 auto;
+	margin: 0px auto;
 }
 #register{
-	position: absolute;
-	top:50px;
-	right: 50px;
+	position: relative;
+	top:155px;
+	left: 560px;
 	width: 600px;
-	height: 800px;	
-	background-color: pink;
-	margin: 0;
-	padding: 0;
+	height: 500px;
 }
 .u-table {	
-	margin:150px auto;
+	margin:45px auto;
 }
 .u-table tr {
 	width: 200px;
 	height: 25px;
 }
-.u-table tr td {
-	
+.u-table tr td div{
+	margin-left:40px;	
 }
 .u-table tr td input {
+	margin-left:40px;
 	width: 200px;
 	height: 25px;
+	border: 1px solid #01afbe;
+	border-radius: 25px;
+	padding-left: 10px;
+	outline: none;
+}
+.regist-btn {
+	position: relative;
+	top: 45px;
+	left: -10px;
+	width: 270px!important;
+	height: 40px!important;
+	border: none!important;
+	outline: none;
+	background: none;
+	color: #ffffff;
 }
 /*   tips */
 #u_error{

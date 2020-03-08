@@ -17,6 +17,7 @@ $rst=mysqli_query($con,$sql);
 	<link rel="stylesheet" href="../../public/css/index.css">
 </head>
 <body>
+<div class="all">
 	<div class="main">
 		<?php
 			include '../../header.php';
@@ -65,10 +66,11 @@ $rst=mysqli_query($con,$sql);
 				</div>
 			</div>
 		</div>
-
+	</div>
+</div>
 		<?php
 			include '../../footer.php';
 		?>
-	</div>
+	
 </body>
 </html>

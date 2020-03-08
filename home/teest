@@ -97,3 +97,13 @@
 			?>
 		</div>
 	</div>	
+
+	<div class="foot1">			
+			<p>
+				Copyright © 
+				<?php
+					echo  date('Y');
+				?>	
+				 WAN GUOYU. All rights reserved.
+			</p>
+			</div>

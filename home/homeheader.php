@@ -15,12 +15,12 @@
 		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
-		<link rel="stylesheet" href="public/css/index_style.css" />
+		<link rel="stylesheet" href="<?php echo $root?>/home/public/css/index_style.css" />
 
-		<link href="public/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-		<script type="text/javascript" src="public/js/megamenu.js"></script>
+		<link href="<?php echo $root?>/home/public/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="<?php echo $root?>/home/public/js/megamenu.js"></script>
 
-		<link rel="stylesheet" href="public/css/index_self.css" />
+		<link rel="stylesheet" href="<?php echo $root?>/home/public/css/index_self.css" />
 	</head>
 	<body>
 		<div id="head">			
@@ -51,7 +51,7 @@
 					<div class="header-bottom-left">
 						<div class="logo">
 							<a  class="logo-ref" href="index.php">
-								<img src="public/img/logo-green.png" class="logo-img" alt="logo-green"/>
+								<img src="<?php echo $root?>/home/public/img/logo-green.png" class="logo-img" alt="logo-green"/>
 								<h1 class="logo-title">千纸林闲置书交易平台</h1>
 							</a>
 						</div>

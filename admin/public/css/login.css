@@ -1,5 +1,5 @@
 body{
-	background: url(../img/登陆背景.jpg) no-repeat center;
+	background: url(../img/login-bg.jpg) no-repeat center;
 }
 #userlogin_body{
 	width: 1024px;
@@ -45,10 +45,14 @@ body{
 	background:#01AFBE;
 	text-align: center;
 	border-radius: 5px;
+	cursor: pointer;
 }
 .ibtnentercssclass{
 	color: white;
 	font-family: "黑体";
 	font-size: 15px;
 	font-weight: bolder;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
 }

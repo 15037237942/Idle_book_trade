@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="../public/css/index.css">
 </head>
 <body>
+<div class="all">
 	<div class="main">
 		<?php
 			include '../header.php';
@@ -36,7 +37,6 @@
 							<th>本站价</th>
 							<th>库存</th>
 							<th>销量</th>
-							<th>试读</th>
 							<th>删除</th>
 							<th>购物车</th>
 						</tr>
@@ -49,7 +49,7 @@
                                      $sqlShelf = "select * from bookshelf where user_id = {$user_id}";
                                      $rstShelf = mysqli_query($con,$sqlShelf);
 
-                                     $size = 4;
+                                     $size = 6;
                                      @$hangnum = mysqli_num_rows($rstShelf);
                                      if($hangnum == 0){
                                         echo "您还未收藏任何图书&nbsp;<a href='../index.php' class='cartNum'>前往收藏</a>";
@@ -84,7 +84,6 @@
 							<td><?php echo $rowBook['nowprice']?>元</td>
 							<td><?php echo $rowBook['stock']?></td>
 							<td><?php echo $rowBook['sales']?></td>
-							<td><a href="../book.html">|点击试读|</a></td>
 							<td><a href="delete.php?id=<?php echo $rowBook['id']?>">|移出书架|</a></td>
 							<td>
 								<a href="../cart/insert.php?id=<?php echo $rowBook['id']?>">
@@ -126,10 +125,10 @@
 			</div>
 
 		</div>
-
-		<?php
-			include '../footer.php';
-		?>
 	</div>
+</div>	
+<?php
+	include '../footer.php';
+?>
 </body>
 </html>
