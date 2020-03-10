@@ -23,12 +23,11 @@
 	<link rel="stylesheet" href="public/css/index.css">
 </head>
 <body>
-	<div class="main">
-
+<div class="all">
 		<?php
 			include 'header.php';
 		?>
-
+      <div class="main">
 		<div class="nav"></div>
 		<div class="content">
 
@@ -110,10 +109,11 @@
 
 		</div>
 		<div class="nav"></div>
-
+   </div>
+</div>
 		<?php
 			include 'footer.php';
 		?>
-	</div>
+	
 </body>
 </html>

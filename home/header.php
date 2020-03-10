@@ -19,7 +19,7 @@
 		<div class="headerinner">
 			<ul class="headernav">
 				<li class="logo">
-					<a href="<?php echo $root?>/home/index.php" target="_blank">
+					<a href="<?php echo $root?>/home/index.php" target="_top">
 						<img src="<?php echo $root?>/home/public/img/logo.png" alt="首页"/>
 					</a>					
 				</li>				

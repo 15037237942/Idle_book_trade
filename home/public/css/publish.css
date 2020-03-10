@@ -1,174 +1,108 @@
+*{
+	box-sizing: border-box;
+}
 #fabu{
-	background: url(../img/publish-bg.png) no-repeat center;
+	/* background: url(../img/publish-bg.png) no-repeat center; */
+	position: relative;
 	background-size: auto 100%;
 	width: auto;
 	height:550px;
 	margin-top: 20px;
 	text-align: center;
 	font-family: "黑体";
-	
 }
-.left-name{
-	float: left;
+.cut-line {
 	position: absolute;
-	left: 23%;
-	top: 23%;
+    top: 50px;
+    left: 48%;
+    height: 346px;
+    border: none;
+    border-left: 1px dashed #ccc;
 }
-.right-name{
-	float: left;
-	border:1px solid #e1e1e1;
-	width: 160px;
-	height: 30px;
-	position: absolute;
-	left: 27%;
-	top: 23%;
-
+.book-table {
+	width: 800px;
+	height: auto;
+	margin:45px auto;
 }
-.left-writer{
-	float: left;
-	position: absolute;
-	left: 23%;
-	top: 33%;
-}
-.right-writer{
-	float: left;
-	border:1px solid #e1e1e1;
-	width: 160px;
-	height: 30px;
-	position: absolute;
-	left: 27%;
-	top: 33%;
-}
-.left-oprice{
-	float: left;
-	position: absolute;
-	left: 23%;
-	top: 43%;
-}
-.right-oprice{
-	float: left;
-	border:1px solid #e1e1e1;
-	width: 160px;
-	height: 30px;
-	position: absolute;
-	left: 27%;
-	top: 43%;
-}
-.left-nprice{
-	float: left;
-	position: absolute;
-	left: 23%;
-	top: 53%;
-}
-.right-nprice{
-	float: left;
-	border:1px solid #e1e1e1;
-	width: 160px;
-	height: 30px;
-	position: absolute;
-	left: 27%;
-	top: 53%;
-}
-.left-stock{
-	float: left;
-	position: absolute;
-	left: 23%;
-	top: 63%;
-}
-.right-stock{
-	float: left;
-	border:1px solid #e1e1e1;
-	width: 160px;
-	height: 30px;
-	position: absolute;
-	left: 27%;
-	top: 63%;
-}
-.left-num{
-	float: left;
-	position: absolute;
-	left: 23%;
-	top: 73%;
-}
-.right-num{
-	float: left;
-	border:1px solid #e1e1e1;
-	width: 160px;
-	height: 30px;
-	position: absolute;
-	left: 27%;
-	top: 73%;
-}
-.left-huojia{
-	float: left;
-	position: absolute;
-	left: 43%;
-	top: 23%;
-}
-.right-huojia{
-	float: left;
-	width: 160px;
-	height: 30px;
-	position: absolute;
-	left: 45%;
-	top: 23%;
-
-}
-.left-leibie{
-	float: left;
-	position: absolute;
-	left: 43%;
-	top: 33%;
-}
-.right-leibie{
-	float: left;
-	width: 160px;
-	height: 30px;
-	position: absolute;
-	left: 44%;
-	top: 33%;
-
-}
-.left-img{
-	float: left;
-	position: absolute;
-	left: 43%;
-	top: 43%;
-}
-.right-img{
-	float: left;
-	width: 160px;
-	height: 30px;
-	position: absolute;
-	left: 47%;
-	top: 43%;
-
-}
-.left-jianjie{
-	float: left;
-	position: absolute;
-	left: 43%;
-	top: 53%;
-}
-.right-jianjie{
-	float: left;
-	width: 220px;
-	height: 160px;
-	position: absolute;
-	left: 47%;
-	top: 53%;
-
-}
-.commit{
-	float: right;
-	position: absolute;
-	right: 22%;
-	top: 50%;
-	width:50px;
+.book-table tr{
+	width: 100%;
 	height: 50px;
-	background: transparent;
-	
 }
-.commit{
-	color: #FFFFFF;
+.book-table tr td {
+	width: 250px;
+	height: 50px;	
+	line-height: 50px;
+	text-align:center;
+}
+/* 表格名称宽度设定 */
+.book-table .table-lable {
+	width: 50px;   
+}
+.book-table tr .td-right{
+	margin-left: 50px;
+}
+.input-text {
+	width: 200px;
+	height: 25px;
+	padding-left:10px;
+	border: 1px solid #01afbe;
+}
+.input-select {
+	width: 200px;
+	height: 25px;
+	border: 1px solid #01afbe;
+}
+/* .input-radio {
+	
+} */
+/* 上传文件样式处理 */
+.file-box input{
+	display: none;
+}
+input.input-file {
+	position: relative;
+	top:5px;
+	left:65px;
+	display: inline-block;
+	width: 200px;
+	margin: 0;
+	padding: 4px 12px;
+	background: #D0EEFF;
+	border: 1px solid #99D3F5;
+	border-radius: 4px;
+	overflow: hidden;
+	color: #1E88C7;
+	text-decoration: none;
+	text-indent: 0;
+	line-height: 20px;
+}
+.input-file input {
+	position: absolute;
+	font-size: 100px;
+	right: 0;
+	top: 0;
+	opacity: 0;
+}
+.input-file:hover {
+	background: #AADFFD;
+	border-color: #78C3F3;
+	color: #004974;
+	text-decoration: none;
+}
+
+.text-info {
+	width: 200px;
+	height: 150px;
+	vertical-align: middle;
+}
+.input-textarea {
+	line-height: 20px;
+	padding:5px;
+}
+.input-submit {
+	width: 500px;
+	height: 30px;
+	color:#fff;
+	background-color: #01afbe;
+	line-height: 30px;
 }

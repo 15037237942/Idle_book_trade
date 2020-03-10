@@ -24,3 +24,58 @@
     echo  $list['bid']."<br/>";
     echo  $list['title'];
 ?>
+
+<table class="book-table">
+                  <tr>
+                    <td class="table-lable">名称:</td>
+                    <td><input type="text" name="name" id="" class="input-text"></td>
+                    
+                    <td class="td-right table-lable">类别:</td>
+                    <td>
+                      <select name="class_id" class="input-select">
+                        <?php
+                          while($row=mysqli_fetch_assoc($rst)){
+                            echo "<option value='{$row['id']}'>{$row['name']}</option>";}
+                        ?>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-lable">作者:</td>
+                    <td><input type="text" name="writer" id="" class="input-text"></td>
+                  </tr>
+                  <tr>
+                    <td class="table-lable">定价:</td>
+                    <td><input type="text" name="oldprice" id="" class="input-text"></td>
+                  </tr>
+                  <tr>
+                    <td class="table-lable">售价:</td>
+                    <td><input type="text" name="nowprice" id="" class="input-text"></td>
+                  </tr>
+                  <tr>
+                    <td class="table-lable">数量:</td>
+                    <td><input type="text" name="stock" id="" class="input-text"></td>
+                  </tr>
+                  <tr>
+                    <td class="table-lable">销量:</td>
+                    <td><input type="text" name="sales" id="" class="input-text"></td>
+                  </tr>
+                  <tr>
+                    <td class="table-lable">货架:</td>
+                    <td>
+                      <input type="radio" name="shelf" value='1' class="input-radio" checked> 上架
+                      <input type="radio" name="shelf" value='0'> 下架
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-lable">封面:</td>
+                    <td><input type="file" name="img"  class="input-file"></td>
+                  </tr>
+                  <tr>
+                    <td class="table-lable">简介:</td>
+                    <td><textarea name='info' cols="30" rows="5"  class="input-textarea"></textarea></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><input type="submit" value="发布" class="input-submit"></td>
+                  </tr>
+                </table>

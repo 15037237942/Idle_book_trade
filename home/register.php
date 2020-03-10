@@ -68,7 +68,9 @@
                 </td>              
               </tr>
               <tr>
-                <td><input id="regbtn" type="button" class="regist-btn" value="注册" disabled="disabled"/></td>
+                <td>
+                  <input id="regbtn" type="button" class="regist-btn" value="注册" disabled="disabled"/>
+                </td>
               </tr>
             </table>
           </form>

@@ -87,7 +87,7 @@
 			<div class="featured-first">
 				<div class="featured-first-head">
 						<h2 class="featured-first-title"> 好书推荐 </h2>
-						<a href="#"><h2 class="featured-first-right">  更多</h2></a>
+						<a href="./class.php"><h2 class="featured-first-right">  更多</h2></a>
 						<div class="clear"></div>
 						<hr/>
 				</div>

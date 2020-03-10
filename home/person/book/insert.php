@@ -23,7 +23,7 @@ $ext_value = explode('.',$name);
 $ext = array_pop($ext_value);
 $dst = '../../../public/uploads/'.time().mt_rand().'.'.$ext;
 
-echo "$supplier";
+// echo "$supplier";
 
 if(move_uploaded_file($src,$dst)){
     //进行图片缩放150*220
