@@ -11,8 +11,9 @@ $reback = '0';                                   //定义初始变量
 if(!empty($username) and !empty($password)){
     $sql = "select * from user where username = '".$username."' and password = '".$password."'";
     $rst = mysqli_query($con,$sql);
-    $row = mysqli_fetch_assoc($rst);
 
+    $row = mysqli_fetch_assoc($rst);
+    
     $num = $conne->getRowsNum($sql);
     if($num == 0 or $num == ''){
              $reback = 1;
@@ -20,7 +21,8 @@ if(!empty($username) and !empty($password)){
              $reback = '-1';
              setcookie('username',$username,time()+60*10);
              $_SESSION['home_username'] = $username;
-             $_SESSION['home_userid'] = $row['id'];
+             $_SESSION['home_userid'] = $row['id'];             
+             $_SESSION['home_img'] = $row['img'];
      }
    }
     echo $reback;

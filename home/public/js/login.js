@@ -54,7 +54,7 @@ window.onload = function(){
                         $('lgpwd').select();
                     }else if(msg == '-1'){
                         Toast("登录成功");
-                        location = 'person/index.php';
+                        location = './index.php';
                     }else{
                         Toast("用户名或密码输入错误");
                     }

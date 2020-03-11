@@ -9,11 +9,6 @@
 <html>
 	<head>
 		<meta charset="utf-8" />		
-		<!-- <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
-
-		<link rel="stylesheet" href="home/public/css/bootstrap.css"> 
-		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
 		<link rel="stylesheet" href="<?php echo $root?>/home/public/css/index_style.css" />
 
@@ -28,18 +23,18 @@
 				<div class="wrap"> 
 					<div class="cssmenu">
 						<ul>
-							<!-- <li class="active"><a href="login.html">Account</a></li> |
-							<li><a href="checkout.html">Wishlist</a></li> | -->
-								<?php
-								if(!@$_SESSION['home_userid']){
-								echo "<li><a href='{$root}/home/login.php'>登录</a></li>";
-								}else{
-								echo "<li><a href='{$root}/home/person/index.php'>
-								欢迎{$_SESSION['home_username']}登录</a></li> |
-								<li><a href='{$root}/home/logout.php'>退出</a></li> |";
-								}
-								?>
-							<li><a href="<?php echo $root?>/home/register.php">注册</a></li>
+							<?php
+							if(!@$_SESSION['home_userid']){
+							echo "<li><a href='{$root}/home/login.php'>登录</a></li> |
+									<li><a href='{$root}/home/register.php'>注册</a></li>";
+							}else{
+							echo "<li><a href='{$root}/home/person/index.php'>
+							<img src='../public/upusers/{$_SESSION['home_img']}' class='head-icon'/>
+							欢迎{$_SESSION['home_username']}登录</a></li> |
+							<li><a href='{$root}/home/logout.php'>退出</a></li>";
+							}
+							?>							
+							| <li class="head-date"><?php echo date("Y-m-d") ?></li>
 						</ul>
 					</div>
 					<div class="clear"></div>
@@ -99,7 +94,7 @@
 						</div>
 					</div>
 					<div class="header-bottom-right">
-						<div class="search">	
+						<div class="search">						
 							<form action="hotsearch.php" method="post">
 							<input value="请输入图书关键字" name="keyword" type="text"
 								onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入图书关键字';}"

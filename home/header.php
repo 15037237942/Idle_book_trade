@@ -29,7 +29,7 @@
 				<li><a href="<?php echo $root?>/home/demo.html" >每日推荐</a></li>
 				<li><a href="<?php echo $root?>/home/cart/index.php"" >购物车</a></li>
 				<li><a href="<?php echo $root?>/home/person/index.php"" >个人中心</a></li>		
-			</ul>
+			</ul>			
 		</div>
 	</div>	
 	</body>

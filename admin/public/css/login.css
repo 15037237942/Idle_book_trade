@@ -1,22 +1,24 @@
-body{
-	background: url(../img/login-bg.jpg) no-repeat center;
-}
-#userlogin_body{
-	width: 1024px;
-	height: 402px;
-	margin-top: 150px;
-}
+
 .text{
 	color: #01AFBE;
 	margin: 20px 160px;
 	font-family: "仿宋";
 }
+#userlogin_body{
+	position: relative;
+	width: 1024px;
+	height: 400px;
+	margin: 50px auto;
+	background: url(../img/login-bg.jpg) no-repeat center;
+}
+
 .top{
-	float: right;
-	margin-top: -50px;	
+	position: relative;
+	top:50px;
+	left: 60%;
 }
 .user{
-	color: #016169;
+	color: #016169;	
 }
 .pas{
 	color: #016169;
@@ -36,9 +38,9 @@ body{
 
 
 .foot{
-	float: left;
-	margin-top: 50px;
-	margin-left: 817px;
+	position: relative;
+	top:110px;
+	left: 60%;
 	width: 205px;
 	height: 40px;
 	line-height: 40px;

@@ -22,7 +22,7 @@
 			<div class="floor">
 				<div class="floorHeader">
 					<div class="left">
-						<span>我的购物车:</span>	
+						<span><a href="../index.php">首页</a> >>我的购物车:</span>	
 					</div>
 					<div class="right">
 					    <a href="../index.php">继续购物>></a>

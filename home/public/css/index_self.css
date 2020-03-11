@@ -1,6 +1,19 @@
 #head {
 	height: 185px;
 }
+/* head-icom */
+.head-icon{
+	position: relative;
+    left: -10px;
+    top: -3px;
+    float: left;
+    width: 28px!important;
+    height: 28px;
+    border-radius: 50%;
+}
+.head-date {
+	color:#fff;
+}
 /*--logo--*/
 .logo-ref {
 	display: block;

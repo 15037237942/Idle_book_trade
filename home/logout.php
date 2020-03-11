@@ -9,5 +9,5 @@
 
     $_SESSION['home_username'] = 0;
 
-    echo '<script>location="login.php"</script>';
+    echo '<script>location="./index.php"</script>';
 ?>

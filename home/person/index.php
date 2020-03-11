@@ -29,7 +29,7 @@
 			<div class="floor">
 				<div class="floorHeader">
 					<div class="left">
-						<span>个人中心:</span>	
+						<span><a href="../index.php">首页</a> >>个人中心:</span>	
 					</div>
 				</div>
 
@@ -47,12 +47,14 @@
 							<li>我的订单</li>
 							<li><a href="order/myorder.php">|--查看我的订单</a></li>
 							<li><a href="order/gukeorder.php">|--查看客户订单</a></li>
+							<li>&nbsp;</li>
+							<li><a href='<?php echo $root?>/home/logout.php'>退出登录</a></li>
 						</ul>
 					</div>
 
 					<div class='floorFooter2Right'>
 						<div class='fenmu'>
-							<img src="../public/img/wel.png" alt="">	
+							<img src="../public/img/wel.png" alt="">							
 						</div>
 					</div>
 					<div class='clear'></div>
