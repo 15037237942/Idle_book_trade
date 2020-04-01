@@ -19,8 +19,11 @@
 
 </head>
 <body class="pcindex">
-
+    <?php 
+        include 'homeheader.php';
+    ?>
 <div id="fullpage">
+
     <div class="first section">
         <div class="container">
             <div class="phonesblock">
@@ -31,17 +34,17 @@
             </div>
 
             <div class="downblock">
-
                 <div class="downwrap">
                     <img src="../img/down2.png" alt="" class="down" />
                 </div>
             </div>
+
             <div class="star">
                 <div class="vline"></div>
                 <img src="../img/star2.png" alt="" />
             </div>
-            <div class="androiddown"></div>
 
+            <div class="androiddown"></div>
         </div>
     </div>
     
@@ -100,6 +103,7 @@
             </div>
         </div>
     </div>
+
     <div class="third section">
         <div class="container">
             <div class="goodnight">
@@ -113,7 +117,7 @@
                 <div class="yehua">
                     <div class="title">泰戈尔——著  </div>
                     <div class="content">
-           你微微的笑着，<br />
+                            你微微的笑着，<br />
                             不同我说什么话。<br />
                             而我觉得，<br />
                            为了这个，我已等待很久。<br />
@@ -127,6 +131,7 @@
             </div>
         </div>
     </div>
+
     <div class="fourth section">
         <div class="container">
             <div class="connblock">
@@ -169,6 +174,7 @@
 
         </div>
     </div>
+
     <div class="fifth section">
         <div class="aboveblock">
             <div class="above"></div>
@@ -193,5 +199,10 @@
     </div>
 
 </div>
+
+	<!-- start foot -->
+	<?php 	   
+		include 'footer.php';
+	?>
 </body>
 </html>

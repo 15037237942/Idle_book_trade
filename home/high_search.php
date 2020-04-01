@@ -1,5 +1,8 @@
 <?php
- include '../public/common/conn.php';
+  include '../public/common/conn.php';
+
+  $sql="select * from class";
+  $rst=mysqli_query($con,$sql);
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,7 +16,13 @@
 		<div id="search">				
 			<form action="matchsearch.php" method="post">
 			    <input placeholder="请输入图书名" type="text" name="name" class="search_text">
-			    <input placeholder="请输入作者名" type="text" name="writer" class="search_text">
+				<input placeholder="请输入作者名" type="text" name="writer" class="search_text">
+				<select name="class_id" class="search_text">
+                  <?php
+                    while($row=mysqli_fetch_assoc($rst)){
+                      echo "<option value='{$row['id']}'>{$row['name']}</option>";}
+                  ?>
+                </select>
 				<input name="search" type="submit" value="高级搜索" class="btn-search"/>
 			</form>			
 		</div>

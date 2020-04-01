@@ -22,10 +22,10 @@
 			<div class="floor">
 				<div class="floorHeader">
 					<div class="left">
-						<span><a href="../index.php">首页</a> >>我的购物车:</span>	
+						<span><a href="../index.php">首页</a>  &raquo; 我的购物车:</span>	
 					</div>
 					<div class="right">
-					    <a href="../index.php">继续购物>></a>
+					    <a href="../index.php">继续购物 &raquo; </a>
 					</div>
 				</div>
 
@@ -75,10 +75,10 @@
                               <a href="clear.php" class='cartNum'>清空购物车</a>
                            <td>
                            <td>
-                              <span>总合计：</span>
+                              <span><h4>合计:</h4></span>
                            </td>
                            <td>
-                              <span><?php echo $tot?>元</span>
+                              <span class="indentSum-part">￥<?php echo $tot?>元</span>
                            </td>
                         </tr>
                     <?php
@@ -159,16 +159,15 @@
               	     </div>
                  </div>
 
-                 <div class="floorFooter2">
+                 <div class="floorFooter2 part-indent">
                          <select name="paytype">
                              <option value='1' selected>货到付款</option>
                              <option value='2'>支付宝付款</option>
-                             <option value='3'>一卡通付款</option>
+                             <option value='3'>微信付款</option>
                          </select>
                          <select name="posttype">
                              <option value='1' selected>普通快递</option>
-                             <option value='2'>EMS</option>
-                             <option value='3'>顺丰</option>
+                             <option value='2'>加急快递</option>                             
                          </select>
               	         <input type="submit" value="提交订单" class="commit">
                  </div>

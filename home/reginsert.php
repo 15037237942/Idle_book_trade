@@ -13,4 +13,4 @@
        $reback ='1';
     }
     echo $reback;   //输出变量值
-?>
+?>thumb_default_avatar.jpg

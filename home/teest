@@ -60,7 +60,7 @@
 		<div class="wrap">	
 			<div>
 				<a href="#">
-					<p class="wenzi"> >>每日好书推荐 </p>
+					<p class="wenzi">  &raquo; 每日好书推荐 </p>
 				</a>
 			</div>
 			<?php

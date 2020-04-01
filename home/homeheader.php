@@ -66,27 +66,32 @@
 									</a>
 								</li>
 								<li>
-									<a href="<?php echo $root?>/home/bookshelf/index.php"  class="2" >
+									<a href="<?php echo $root?>/home/class.php" class="2">
+										图书类别
+									</a>
+								</li>
+								<li>
+									<a href="<?php echo $root?>/home/bookshelf/index.php"  class="3" >
 										我的书库
 									</a>
 								</li>
 								<li>
-									<a href="<?php echo $root?>/home/saleadd.php" class="3" >
+									<a href="<?php echo $root?>/home/saleadd.php" class="4" >
 										发布图书
 									</a>
 								</li>
 								<li>
-									<a href="<?php echo $root?>/home/demo.html" class="4" >
+									<a href="<?php echo $root?>/home/demo.php" class="5" >
 										每日推荐
 									</a>
 								</li>
 								<li>
-									<a href="<?php echo $root?>/home/cart/index.php" class="5" >
+									<a href="<?php echo $root?>/home/cart/index.php" class="6" >
 										购物车
 									</a>
 								</li>
 								<li>
-									<a href="<?php echo $root?>/home/person/index.php"  class="6">
+									<a href="<?php echo $root?>/home/person/index.php"  class="7">
 										个人中心
 									</a>
 								</li>								

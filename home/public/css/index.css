@@ -19,6 +19,10 @@ a{
 	cursor: pointer!important;
 }
 
+input[type=text] {
+	border:1px solid #ccc;
+}
+
 .main{
 	margin:0 auto;
 }
@@ -57,7 +61,7 @@ a{
 	color:#ccc;
 }
 .input-k{
-	border: 1px solid #888888;
+	border: 1px solid #000;
 }
 .nav{
 	height:5px;
@@ -117,6 +121,14 @@ a{
 	padding-bottom:5px;	
 	font-family: "黑体";
 	font-size: 13px;
+}
+.part-indent{
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
+.indentSum-part {
+	color:#01A;
+	font-size: 18px;
 }
 .blanck_row {
 	height: 50px;
@@ -423,6 +435,10 @@ table tr td{
 	padding:5px 15px;
 	width:50px;
 	height:50px;
+}
+#editor {
+	width: 800px;
+	height: 500px;
 }
 ::-webkit-scrollbar{width: 6px;height: 6px;}
 ::-webkit-scrollbar-thumb{background-color: #cfcfd2;border-radius: 8px;background-clip: padding-box;min-height: 28px;}

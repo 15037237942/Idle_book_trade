@@ -35,7 +35,7 @@
 
             <div class="floorHeader">
 					<div class="left">
-						<span><a href="./index.php">首页</a> >>搜索结果</span>
+						<span><a href="./index.php">首页</a>  &raquo; 搜索结果</span>
 					</div>
 				</div>
 

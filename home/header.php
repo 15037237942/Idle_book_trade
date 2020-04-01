@@ -26,7 +26,7 @@
 				<li><a href="<?php echo $root?>/home/class.php">图书类别</a></li>
 				<li><a href="<?php echo $root?>/home/bookshelf/index.php">我的书库</a></li>
 				<li><a href="<?php echo $root?>/home/saleadd.php">发布旧书</a></li>
-				<li><a href="<?php echo $root?>/home/demo.html" >每日推荐</a></li>
+				<li><a href="<?php echo $root?>/home/demo.php" >每日推荐</a></li>
 				<li><a href="<?php echo $root?>/home/cart/index.php"" >购物车</a></li>
 				<li><a href="<?php echo $root?>/home/person/index.php"" >个人中心</a></li>		
 			</ul>			

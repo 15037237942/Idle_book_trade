@@ -39,6 +39,8 @@
                             <li>我的订单</li>
                             <li><a href="myorder.php">|--查看我的订单</a></li>
                             <li><a href="gukeorder.php">|--查看客户订单</a></li>
+							<li>&nbsp;</li>
+							<li><a href='<?php echo $root?>/home/logout.php'>退出登录</a></li>
 						</ul>
 					</div>
 
@@ -93,7 +95,7 @@
 												  break;
 
 											   case 3:
-												  echo "<td>一卡通支付</td>";
+												  echo "<td>微信支付</td>";
 												  break;
 											}
 											switch($row['posttype']){
@@ -102,11 +104,7 @@
 											   break;
 
 											   case 2:
-											   echo "<td>EMS</td>";
-											   break;
-
-											   case 3:
-											   echo "<td>顺丰</td>";
+											   echo "<td>加急快递</td>";
 											   break;
 											}
 											echo "<td>{$row['name']}</td>";

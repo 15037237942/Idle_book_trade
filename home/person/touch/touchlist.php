@@ -39,6 +39,8 @@
                              <li>我的订单</li>
                              <li><a href="../order/myorder.php">|--查看我的订单</a></li>
                              <li><a href="../order/gukeorder.php">|--查看客户订单</a></li>
+							 <li>&nbsp;</li>
+							<li><a href='<?php echo $root?>/home/logout.php'>退出登录</a></li>
 						</ul>
 					</div>
 

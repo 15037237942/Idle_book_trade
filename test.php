@@ -1,81 +1,62 @@
 <?php
-    echo date("Y-m-d");
-    $uname = $_REQUEST["uname"];
-    echo $uname;
-    $sale = 3600;
-    $result = decima($sale,2);
-    echo $result;
-?>
+/* vim: set expandtab tabstop=4 shiftwidth=4: */
+// +----------------------------------------------------------------------+
+// | PHP version 5                                                        |
+// +----------------------------------------------------------------------+
+// | Copyright (c) 1997-2004 The PHP Group                                |
+// +----------------------------------------------------------------------+
+// | This source file is subject to version 3.0 of the PHP license,       |
+// | that is bundled with this package in the file LICENSE, and is        |
+// | available through the world-wide-web at the following url:           |
+// | http://www.php.net/license/3_0.txt.                                  |
+// | If you did not receive a copy of the PHP license and are unable to   |
+// | obtain it through the world-wide-web, please send a note to          |
+// | license@php.net so we can mail you a copy immediately.               |
+// +----------------------------------------------------------------------+
+// | Authors: Original Author <author@example.com>                        |
+// |          Your Name <you@example.com>                                 |
+// +----------------------------------------------------------------------+
+//
+// $Id:$
 
-<?php
-// 如果希望在函数内部修改参数值，且函数外部也能同时改变该参数的值，在传递的参数前面加 & 
-   function  change(&$number){
-       $number = $number * 2;
-       echo  '函数内部  $number = ' . $number;
-   }
-   $number = 10;  //实参
-   change($number);
-   echo '<p>函数外部$number=' . $number . '</p>';
+$uname = $_POST["uname"];
+$pass = $_POST["upass"];
+$link = mysqli_connect('localhost', 'root', '123456');
+mysqli_set_charset($link, 'utf8');
+$dbLink = mysqli_select_db($link, "courseCard");
+$selectSQL1 = "select * from md_user where user_name ='$uname' and user_password='$pass'  and user_power<2 ";
+$res1 = mysqli_query($link, $selectSQL1);
+if (!$res1) {
+    printf("Error: %s\n", mysqli_error($link));
+    exit();
+}
+$num = mysqli_num_rows($res1);
+$id = "";
+$user_power = 1;
+if ($num == 1) {
+    while ($row = $res1->fetch_array()) {
+        $id = $row['user_personid'];
+        $user_power = $row['user_power'];
+    }
+    $name = "";
+    echo isset($id) . "AAAAAAAAAAAAA";
+    if ($id == null) {
+        $name = $uname
+    } else {
+        $sql1 = "select name from md_teacher where teacher_id='$id'";
+        $res2 = mysqli_query($link, $sql1);
+        while ($row = $res2->fetch_array()) {
+            $name = $row['name'];
+        }
+    }
+    echo "<h1>登陆成功，" . $name . "欢迎您！</h1>";
+    $_SESSION["name"] = $name;
+    $_SESSION["power"] = $user_power;
+    header("refresh:2;url=home.php");
+} else {
+    echo "<h1>用户名或密码错误
+<br><br><br><br>
+<a href='aindex.php'><input type='submit' value='重新登录' ></a></h1>";
+}
+$close = mysqli_close($link);
 ?>
-
-<?php
-    $list = [];
-    $list= ["bid" => 103,  "title" => "西游记后转"];
-    echo  $list['bid']."<br/>";
-    echo  $list['title'];
-?>
-
-<table class="book-table">
-                  <tr>
-                    <td class="table-lable">名称:</td>
-                    <td><input type="text" name="name" id="" class="input-text"></td>
-                    
-                    <td class="td-right table-lable">类别:</td>
-                    <td>
-                      <select name="class_id" class="input-select">
-                        <?php
-                          while($row=mysqli_fetch_assoc($rst)){
-                            echo "<option value='{$row['id']}'>{$row['name']}</option>";}
-                        ?>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="table-lable">作者:</td>
-                    <td><input type="text" name="writer" id="" class="input-text"></td>
-                  </tr>
-                  <tr>
-                    <td class="table-lable">定价:</td>
-                    <td><input type="text" name="oldprice" id="" class="input-text"></td>
-                  </tr>
-                  <tr>
-                    <td class="table-lable">售价:</td>
-                    <td><input type="text" name="nowprice" id="" class="input-text"></td>
-                  </tr>
-                  <tr>
-                    <td class="table-lable">数量:</td>
-                    <td><input type="text" name="stock" id="" class="input-text"></td>
-                  </tr>
-                  <tr>
-                    <td class="table-lable">销量:</td>
-                    <td><input type="text" name="sales" id="" class="input-text"></td>
-                  </tr>
-                  <tr>
-                    <td class="table-lable">货架:</td>
-                    <td>
-                      <input type="radio" name="shelf" value='1' class="input-radio" checked> 上架
-                      <input type="radio" name="shelf" value='0'> 下架
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="table-lable">封面:</td>
-                    <td><input type="file" name="img"  class="input-file"></td>
-                  </tr>
-                  <tr>
-                    <td class="table-lable">简介:</td>
-                    <td><textarea name='info' cols="30" rows="5"  class="input-textarea"></textarea></td>
-                  </tr>
-                  <tr>
-                    <td colspan="2"><input type="submit" value="发布" class="input-submit"></td>
-                  </tr>
-                </table>

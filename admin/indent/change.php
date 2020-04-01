@@ -49,19 +49,19 @@
                                 case 1:
                                     echo "<option value='1' selected>货到付款</option>";
                                     echo "<option value='2'>支付宝付款</option>";
-                                    echo "<option value='3'>一卡通付款</option>";
+                                    echo "<option value='3'>微信付款</option>";
                                     break;
 
                                 case 2:
                                     echo "<option value='1'>货到付款</option>";
                                     echo "<option value='2' selected>支付宝付款</option>";
-                                    echo "<option value='3'>一卡通付款</option>";
+                                    echo "<option value='3'>微信付款</option>";
                                     break;
 
                                 case 3:
                                     echo "<option value='1'>货到付款</option>";
                                     echo "<option value='2'>支付宝付款</option>";
-                                    echo "<option value='3' selected>一卡通付款</option>";
+                                    echo "<option value='3' selected>微信付款</option>";
                                     break;
                            }
                    ?>
@@ -75,20 +75,12 @@
                           switch($posttype){
                                case 1:
                                      echo "<option value='1' selected>普通快递</option>";
-                                     echo "<option value='2'>EMS</option>";
-                                     echo "<option value='3'>顺丰</option>";
+                                     echo "<option value='2'>加急快递</option>";                                     
                                      break;
 
                                case 2:
                                      echo "<option value='1'>普通快递</option>";
-                                     echo "<option value='2' selected>EMS</option>";
-                                     echo "<option value='3'>顺丰</option>";
-                                     break;
-
-                               case 3:
-                                     echo "<option value='1'>普通快递</option>";
-                                     echo "<option value='2'>EMS</option>";
-                                     echo "<option value='3' selected>顺丰</option>";
+                                     echo "<option value='2' selected>加急快递</option>";                                     
                                      break;
                           }
                    ?>

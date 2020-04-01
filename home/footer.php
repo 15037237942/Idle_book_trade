@@ -16,13 +16,14 @@
 			<div class="foot2">
 			<nav>
 				<ul>
-					<li><a href="#">图书类别</a>  |</li>
-					<li><a href="#">我的书库</a>  |</li>
+					<li><a href="<?php echo $root?>/home/class.php">图书类别</a>  |</li>
+					<li><a href="<?php echo $root?>/home/bookshelf/index.php">我的书库</a>  |</li>
 					<li><a href="<?php echo $root?>/home/saleadd.php">发布旧书</a>  |</li>
-					<li><a href="<?php echo $root?>/home/demo.html">每日推荐</a>  |</li>					
+					<li><a href="<?php echo $root?>/home/demo.php">每日推荐</a>  |</li>					
 					<li><a href="<?php echo $root?>/home/person/index.php">个人中心</a>  |</li>
-					<?php						
-						echo "<li><a href='../admin/index.php'>后台管理</a></li>"
+					<?php
+						$rootadd = $root."/admin/index.php"	;					
+						echo "<li><a href='$rootadd' >后台管理</a></li>"
 					?>
 				</ul>
 			</nav> 

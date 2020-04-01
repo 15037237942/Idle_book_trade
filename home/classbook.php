@@ -50,7 +50,7 @@
 			<div class="floor">
 				<div class="floorHeader">
 					<div class="left">
-						<span><a href='index.php'>首页</a> &raquo; <?php echo $rowClass['name']?></span>
+						<span><a href='./class.php'>返回</a> &raquo; <?php echo $rowClass['name']?></span>
 					</div>
 					<div class="right">
 						<span>共有图书&nbsp;<?php echo "$totalnum" ?>&nbsp;种</span>

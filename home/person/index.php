@@ -29,7 +29,7 @@
 			<div class="floor">
 				<div class="floorHeader">
 					<div class="left">
-						<span><a href="../index.php">首页</a> >>个人中心:</span>	
+						<span><a href="../index.php">首页</a>  &raquo; 个人中心:</span>	
 					</div>
 				</div>
 

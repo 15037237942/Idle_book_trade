@@ -15,8 +15,10 @@ $rst=mysqli_query($con,$sql);
 	<title>分类页面</title>
 	<link rel="shortcut icon" href="../../../public/img/favicon.ico" />
 	<link rel="stylesheet" href="../../public/css/index.css">
+	
 </head>
 <body>
+
 <div class="all">
 	<div class="main">
 		<?php
@@ -45,16 +47,16 @@ $rst=mysqli_query($con,$sql);
                             <li>我的订单</li>
                             <li><a href="myorder.php">|--查看我的订单</a></li>
                             <li><a href="gukeorder.php">|--查看客户订单</a></li>
+							<li>&nbsp;</li>
+							<li><a href='<?php echo $root?>/home/logout.php'>退出登录</a></li>
 						</ul>
 					</div>
 
 					<div class='floorFooter2Right'>
 						<form action="commentinsert.php" method='post'>
 							<p>请发表评论:</p>
-							<p>
-								<textarea name="content" class='PersonComment'></textarea>
-							</p>
-
+							<div id="editor"></div>
+							<textarea id="txtarea" name="content" style="display:none;" class='PersonComment'></textarea>							
 							<input type="hidden" name="book_id" value='<?php echo $_GET['book_id']?>'>
 							<p>
 								<input type="submit" value="提交" class='commit'>
@@ -68,9 +70,22 @@ $rst=mysqli_query($con,$sql);
 		</div>
 	</div>
 </div>
-		<?php
-			include '../../footer.php';
-		?>
-	
+	<?php
+		include '../../footer.php';
+	?>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../public/wangEditor-3.1.1/release/wangEditor.js"></script>
+    <script type="text/javascript">
+        var E = window.wangEditor
+        var editor = new E('#editor')
+        var $text1 = $('#txtarea')
+        editor.customConfig.onchange = function (html) {
+            // 监控变化，同步更新到 textarea
+            $text1.val(html)
+        }
+        editor.create()
+        // 初始化 textarea 的值
+        $text1.val(editor.txt.html())
+    </script>
 </body>
 </html>

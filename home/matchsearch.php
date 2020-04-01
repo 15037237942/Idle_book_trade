@@ -3,10 +3,10 @@
   include '../public/common/conn.php';
 
   if(isset($_POST['search'])){
-     if($_POST["name"]==""&&$_POST["writer"]==""){
+     if($_POST["name"]==""&&$_POST["writer"]==""&&$_POST['class_id']==""){
          echo '<script>location="class.php"</script>';
      }{
-    $searchinfo = "name=".$_POST["name"]."&writer=".$_POST["writer"];//搜索信息放入字符串，&连接符
+    $searchinfo = "name=".$_POST["name"]."&writer=".$_POST["writer"]."&class_id=".$_POST['class_id'];//搜索信息放入字符串，&连接符
     $key = explode('&',$searchinfo);//分割字符串，每项信息放入数组一个元素中
 
     $sqlBook_page = "select * from book";
@@ -46,12 +46,13 @@
 	<link rel="stylesheet" href="public/css/index.css">
 </head>
 <body>
-	<div class="main">
-
-		<?php
-			include 'header.php';
+   <div class="all">
+      <?php
+         include 'header.php';
+      ?>
+      <?php			
+			include 'high_search.php';
 		?>
-
 		<div class="nav"></div>
 		<div class="content">
 
@@ -59,7 +60,7 @@
 			<div class="floor">
 				<div class="floorHeader">
 					<div class="left">
-						<span>搜索结果</span>
+						<span><a href="./class.php">返回</a>  &raquo; 搜索结果</span>
 					</div>
 				</div>
 
@@ -127,18 +128,17 @@
                echo "<a href=?page=".$totalpage.">尾页</a>";
             }
             echo "</div>";
-          }
-                  
+          }         
          }
         }
         ?>
-
 		</div>
-		<div class="nav"></div>
-
-		<?php
-			include 'footer.php';
-		?>
-	</div>
+      <div class="nav"></div>
+      </div>
+      </div>
+   </div>
+	<?php
+		include 'footer.php';
+	?>
 </body>
 </html>

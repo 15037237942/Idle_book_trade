@@ -45,33 +45,33 @@
                     <img src="public/img/banner3-3.png" alt=""/>
                 <!-- /Slide image -->
                 <!-- Texts container -->
-                <!-- <div class="slide_content">
+                <div class="slide_content">
                     <div class="slide_content_wrap">
-                        <h4 class="title">Aluminium Club</h4>
-                        <p class="description">Experiance ray ban</p>
+                        <h4 class="title">闲置书</h4>
+                        <p class="description">千纸林闲置易书</p>
                     </div>
-                </div>  -->
+                </div> 
                  <!-- /Texts container -->
 			</div>
 			
             <div class="slide">
                 <img src="public/img/banner2-2.png" alt=""/>
-                <!-- <div class="slide_content">
+                <div class="slide_content">
                     <div class="slide_content_wrap">
-                        <h4 class="title">consectetuer adipiscing </h4>
-                        <p class="description">diam nonummy nibh euismod</p>
+                        <h4 class="title">便捷 </h4>
+                        <p class="description">交易您所有</p>
                     </div>
-                </div> -->
+                </div>
 			</div>
 			
 			<div class="slide">
                 <img src="public/img/banner1-1.png" alt=""/>
-                <!-- <div class="slide_content">
+                <div class="slide_content">
                     <div class="slide_content_wrap">
-                        <h4 class="title">consectetuer adipiscing </h4>
-                        <p class="description">diam nonummy nibh euismod</p>
+                        <h4 class="title">如愿 </h4>
+                        <p class="description">寻找您所愿</p>
                     </div>
-                </div> -->
+                </div>
             </div>
             <!--/slide -->
         </div>

@@ -29,6 +29,6 @@
  //清空购物车
  $_SESSION['books']=array();
 
- echo "<script>alert('您的订单号为：{$code}')</script>";
+ echo "<script>alert('您已成功下单,订单号为：{$code}')</script>";
  echo "<script>location='../person/order/myorder.php'</script>";
 ?>

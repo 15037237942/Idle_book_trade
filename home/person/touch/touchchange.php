@@ -16,6 +16,11 @@
 	<title>修改联系方式</title>
 	<link rel="shortcut icon" href="../../../public/img/favicon.ico" />
 	<link rel="stylesheet" href="../../public/css/index.css">
+	<style>
+		.input-k {
+			border:1px solid #000;
+		}
+	</style>
 </head>
 <body>
 <div class="all">
@@ -46,6 +51,8 @@
                             <li>我的订单</li>
                             <li><a href="../order/myorder.php">|--查看我的订单</a></li>
                             <li><a href="../order/gukeorder.php">|--查看客户订单</a></li>
+							<li>&nbsp;</li>
+							<li><a href='<?php echo $root?>/home/logout.php'>退出登录</a></li>
 						</ul>
 					</div>
 
@@ -53,13 +60,13 @@
 						<div class='personUseradd'>
 						  <form action='touchupdate.php' method='post'>
 								<p>收货人姓名:</p>
-								<p><input type="text" name='name' value='<?php echo $row['name']?>'></p>
+								<p><input type="text" class="input-k" name='name' value='<?php echo $row['name']?>'></p>
 								<p>地址:</p>
-								<p><input type="text" name='addr' value='<?php echo $row['addr']?>'></p>
+								<p><input type="text" class="input-k" name='addr' value='<?php echo $row['addr']?>'></p>
 								<p>邮编:</p>
-								<p><input type="text" name='postcode' value='<?php echo $row['postcode']?>'></p>
+								<p><input type="text" class="input-k" name='postcode' value='<?php echo $row['postcode']?>'></p>
 								<p>电话:</p>
-								<p><input type="text" name='tel' value='<?php echo $row['tel']?>'></p>
+								<p><input type="text" class="input-k" name='tel' value='<?php echo $row['tel']?>'></p>
                                 <p><input type="hidden" name='id' value='<?php echo $row['id']?>'></p>
 
 								<p><input type="submit" value="提交"></p>
