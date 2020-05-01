@@ -18,6 +18,7 @@
 			    <input placeholder="请输入图书名" type="text" name="name" class="search_text">
 				<input placeholder="请输入作者名" type="text" name="writer" class="search_text">
 				<select name="class_id" class="search_text">
+				  <option value="">所有类</option>
                   <?php
                     while($row=mysqli_fetch_assoc($rst)){
                       echo "<option value='{$row['id']}'>{$row['name']}</option>";}

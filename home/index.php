@@ -9,12 +9,6 @@
 	<meta charset="UTF-8">
 	<title>千纸林闲置书交易平台-首页</title>
 	<link rel="shortcut icon" href="../public/img/favicon.ico" />
-	<!-- <link rel="stylesheet" href="public/css/index.css"> -->
-	<!-- <link rel="stylesheet" href="public/css/animate.min.css"> 
-	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
-	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	 -->
 
 	 <script src="public/js/jquery.min.js"></script>
 	<link rel="stylesheet" href="public/css/index_style.css" />
@@ -87,13 +81,13 @@
 			<div class="featured-first">
 				<div class="featured-first-head">
 						<h2 class="featured-first-title"> 好书推荐 </h2>
-						<a href="./class.php"><h2 class="featured-first-right">  更多</h2></a>
+						<a href="./recommend.php"><h2 class="featured-first-right">  更多</h2></a>
 						<div class="clear"></div>
 						<hr/>
 				</div>
 				
 				<?php
-					$sqlBook1 = "select * from book where recommend=1 and shelf=1 order by id desc limit 0,12";
+					$sqlBook1 = "select * from book where recommend=1 and shelf=1 order by id desc limit 0,9";
 					$rstBook1 = mysqli_query($con,$sqlBook1);				   
 					if(!$rstBook1){
 						exit();

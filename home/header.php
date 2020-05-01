@@ -23,7 +23,7 @@
 						<img src="<?php echo $root?>/home/public/img/logo.png" alt="首页"/>
 					</a>					
 				</li>				
-				<li><a href="<?php echo $root?>/home/class.php">图书类别</a></li>
+				<li><a href="<?php echo $root?>/home/class.php">书籍类别</a></li>
 				<li><a href="<?php echo $root?>/home/bookshelf/index.php">我的书库</a></li>
 				<li><a href="<?php echo $root?>/home/saleadd.php">发布旧书</a></li>
 				<li><a href="<?php echo $root?>/home/demo.php" >每日推荐</a></li>

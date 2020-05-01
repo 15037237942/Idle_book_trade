@@ -67,7 +67,7 @@
 								</li>
 								<li>
 									<a href="<?php echo $root?>/home/class.php" class="2">
-										图书类别
+										书籍类别
 									</a>
 								</li>
 								<li>

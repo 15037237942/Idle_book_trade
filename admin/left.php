@@ -48,11 +48,17 @@
 	<script src='public/js/jquery.js'></script>
 </head>
 <body>
+	<?php	
+		if($_SESSION['admin_username']=="admin"){
+	?>
 	<h4>管理员管理</h4>
     <div>
     	<p><a href='webmaster/index.php' target='right'>|-查看管理员</a></p>
     	<p><a href='webmaster/add.php' target='right'>|-添加管理员</a></p>
-    </div>
+	</div>
+	<?php
+		}
+	?>
 	<h4>用户管理</h4>
 	<div>
 		<p><a href='user/index.php' target='right'>|-查看用户</a></p>
