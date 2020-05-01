@@ -15,7 +15,7 @@
 	<body>
 		<div id="search">				
 			<form action="matchsearch.php" method="post">
-			    <input placeholder="请输入图书名" type="text" name="name" class="search_text">
+			    <input placeholder="请输入书籍名称" type="text" name="name" class="search_text">
 				<input placeholder="请输入作者名" type="text" name="writer" class="search_text">
 				<select name="class_id" class="search_text">
 				  <option value="">所有类</option>
@@ -24,7 +24,7 @@
                       echo "<option value='{$row['id']}'>{$row['name']}</option>";}
                   ?>
                 </select>
-				<input name="search" type="submit" value="高级搜索" class="btn-search"/>
+				<input name="search" type="submit" value="高级检索" class="btn-search"/>
 			</form>			
 		</div>
 	</body>

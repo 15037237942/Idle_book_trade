@@ -29,11 +29,12 @@
                 <table class="book-table">
                   <tr>
                     <td class="table-lable">名称:</td>
-                    <td><input type="text" required="required" name="name" id="" class="input-text"></td>
+                    <td><input type="text" required name="name" id="" class="input-text"><span class="require">*</span></td>
                     
                     <td class="td-right table-lable">类别:</td>
                     <td>
                       <select name="class_id" class="input-select">
+                        <option value="11"></option>
                         <?php
                           while($row=mysqli_fetch_assoc($rst)){
                             echo "<option value='{$row['id']}'>{$row['name']}</option>";}
@@ -43,7 +44,7 @@
                   </tr>
                   <tr>
                     <td class="table-lable">作者:</td>
-                    <td><input type="text" required="required" name="writer" id="" class="input-text"></td>
+                    <td><input type="text" required name="writer" id="" class="input-text"><span class="require">*</span></td>
 
                     <td class="td-right table-lable">货架:</td>
                     <td>
@@ -53,14 +54,14 @@
                   </tr>
                   <tr>
                     <td class="table-lable">定价:</td>
-                    <td><input type="text" required="required" name="oldprice" id="" class="input-text"></td>
+                    <td><input type="text" pattern="[0-9]+[.]?[0-9]+" required name="oldprice" id="" class="input-text"><span class="require">*</span></td>
                       
                     <td class="td-right table-lable">封面:</td>
-                    <td class="file-box"><input type="file" required="required" name="img"  class="input-file"></td>
+                    <td class="file-box"><input type="file" required name="img"  class="input-file"></td>
                   </tr>
                   <tr>
                     <td class="table-lable">售价:</td>
-                    <td><input type="text" required="required" name="nowprice" id="" class="input-text"></td>
+                    <td><input type="text" pattern="[0-9]+[.]?[0-9]+" required name="nowprice" id="" class="input-text"><span class="require">*</span></td>
                           
                     <td rowspan="3" class="td-right table-lable">简介:</td>
                     <td rowspan="3" class="text-info"><textarea name='info' class="input-textarea" cols="25" rows="5"></textarea></td>                    

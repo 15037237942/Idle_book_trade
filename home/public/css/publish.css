@@ -106,3 +106,6 @@ input.input-file {
 	background-color: #01afbe;
 	line-height: 30px;
 }
+.require {
+	color:red;
+}

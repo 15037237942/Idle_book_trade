@@ -76,7 +76,9 @@
                         ?>
 						<tr>
 							<td>
-								<img src="../../public/uploads/thumb_<?php echo $rowBook['img']?>" width='50px'>
+								<a href="../book.php?book_id=<?php echo $rowShelf['book_id']?>">
+									<img src="../../public/uploads/thumb_<?php echo $rowBook['img']?>" width='50px'>
+								</a>
 							</td>
 							<td><?php echo $rowBook['name']?></td>
 							<td><?php echo $rowBook['writer']?></td>
