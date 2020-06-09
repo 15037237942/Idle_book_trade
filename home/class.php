@@ -87,7 +87,8 @@
 							<div class="nav"></div>
 							<div class="shopInfo">
 								<span class='shopName'><?php echo $rowBook['name']?></span>
-								<span class='shopPrice'>￥<?php echo $rowBook['nowprice']?></span>
+								<span class='shopPrice'>￥<?php echo $rowBook['nowprice']?></span><br/>
+                        <span class='shopPrice'><?php echo $rowBook['book_address']?></span>
 							</div>
 							
 						</div>

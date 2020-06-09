@@ -8,10 +8,10 @@
  $sql = "update admin set password='{$password}' where id = {$id}";
 
  if(mysqli_query($con,$sql)){
-    $_SESSION=array();
-    session_destroy();
-    setcookie('PHPSESSID','',time()-3600,'/');
+   //  $_SESSION=array();
+   //  session_destroy();
+   //  setcookie('PHPSESSID','',time()-3600,'/');
 
-    echo '<script>location="../login.php"</script>';
+    echo '<script>location="index.php"</script>';
  }
 ?>

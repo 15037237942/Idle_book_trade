@@ -15,6 +15,7 @@ $shelf = $_POST['shelf'];
 $info = $_POST['info'];
 $supplier = $user_id;
 $class_id = $_POST['class_id'];
+$book_address = $_POST['book_address'];
 
 //图片上传
 $src = $_FILES['img']['tmp_name'];
@@ -32,7 +33,7 @@ if(move_uploaded_file($src,$dst)){
     $img = basename($dst);
     $sql = "insert into book(name,writer,oldprice,nowprice,stock,sales,shelf,info,class_id,supplier,img) 
     values('{$bookname}','{$writer}','{$oldprice}','{$nowprice}','{$stock}','{$sales}','{$shelf}',
-    '{$info}','{$class_id}','{$supplier}','{$img}')";
+    '{$info}','{$class_id}','{$supplier}','{$img}','{$book_address}')";
 
     if(mysqli_query($con,$sql)){
        echo '<script>location="salelist.php"</script>';

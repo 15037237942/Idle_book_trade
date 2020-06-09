@@ -60,7 +60,7 @@
                                  $start = 0;
                               }
 
-                              $sqlBook = "select * from book where name like '%$keyword%' limit $start,$pagesize";
+                              $sqlBook = "select * from book where name like '%$keyword%' and shelf=1 limit $start,$pagesize";
                               $rstBook = mysqli_query($con,$sqlBook);
                               while($rowBook=mysqli_fetch_assoc($rstBook)){
                ?>
@@ -82,7 +82,10 @@
                   }
                ?>
                <!--楼层结束-->
-               <?php
+            </div>
+
+         </div>
+         <?php
                      echo "<hr>";
                      echo "<div style='text-align:center'>";
                      echo "共有图书&nbsp;".$totalnum."&nbsp;种&nbsp;&nbsp;";
@@ -103,14 +106,14 @@
                   }
                }
                ?>
-            </div>
-         </div>
       </div>
 		<div class="nav"></div>
    </div>
 </div>
-   <?php
-      include 'footer.php';
-   ?>
+</div>
+</div>
+<?php
+   include 'footer.php';
+?>
 </body>
 </html>

@@ -5,7 +5,7 @@
      $sql="select book.*,user.username,class.name cname from book,user,class where book.class_id=class.id and book.supplier=user.id order by book.id";
      $rst=mysqli_query($con,$sql);
 
-     $size = 4;
+     $size = 6;
      $hangnum = mysqli_num_rows($rst);
      if($hangnum == 0){
         echo "暂无图书";

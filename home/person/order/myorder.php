@@ -48,6 +48,7 @@
 						<table width='100%'>
 							<tr>
 								<th>订单号</th>
+                        <!-- <th>联系供货人</th> -->
 								<th>下单时间</th>
 								<th>支付方式</th>
 								<th>快递方式</th>
@@ -73,12 +74,14 @@
                                  $start = 0;
                               }
 
-                              $fenye_sel = "select indent.*,status.name from indent,status where indent.status_id = status.id and indent.user_id = {$user_id} group by indent.code limit $start,$size";
+                              $fenye_sel = "select indent.*,status.name,book.supplier from indent,status,book where indent.status_id = status.id and indent.user_id = {$user_id} and indent.book_id=book.id group by indent.code limit $start,$size";
                               $fenye_add = mysqli_query($con,$fenye_sel);
 
                               while($row=mysqli_fetch_assoc($fenye_add)){
+                                 // <td>供货人ID<a href='touch.php?touch_id={$row['supplier']}' class='cartNum'>{$row['supplier']}</a></td>
                                  echo "<tr>
-                                	   <td><a href='mycode.php?code={$row['code']}' class='cartNum'>{$row['code']}</a></td>
+                                    <td><a href='mycode.php?code={$row['code']}' class='cartNum'>{$row['code']}</a></td>
+                                    
                                 	   <td>".date('Y-m-d h:i:s',$row['time'])."</td>";
                                 	   switch($row['paytype']){
                                        		case 1:

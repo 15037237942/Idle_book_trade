@@ -20,6 +20,12 @@
 	<title>书详情页</title>
 	<link rel="shortcut icon" href="../public/img/favicon.ico" />
 	<link rel="stylesheet" href="public/css/index.css">
+	<style>
+		.address {
+			color:red;
+		}
+
+	</style>
 </head>
 <body>
 <div class="all">
@@ -47,6 +53,7 @@
 							<th>本站价</th>
 							<th>库存</th>
 							<th>销量</th>
+							<th>位置</th>
 							<th>收藏</th>
 							<th>购物车</th>
 						</tr>	
@@ -60,8 +67,15 @@
 							<td><?php echo $rowBook['nowprice']?>元</td>
 							<td><?php echo $rowBook['stock']?></td>
 							<td><?php echo $rowBook['sales']?></td>
+							<td class="address">
+								<?php 
+									$result = empty($rowBook['book_address']) ?"暂无":$rowBook['book_address']; 
+									echo $result;
+								?>
+							</td>
 							<td><a href="bookshelf/insert.php?id=<?php echo $rowBook['id']?>">|加入书架|</a></td>
 							<td>
+								<!-- 加入购物车	 -->
 								<a href="cart/insert.php?id=<?php echo $rowBook['id']?>">
 									<img src="public/img/cart.jpg" alt="">
 								</a>
@@ -75,7 +89,7 @@
 			<div class="floor">
 				<div class="floorHeader">
 					<div class="left">
-						<span>商品评论:</span>	
+						<span>书籍评论:</span>	
 					</div>
 					
 				</div>

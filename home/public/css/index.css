@@ -181,7 +181,7 @@ input[type=text] {
 }
 .shop{
 	width:200px;
-	height:235px;
+	height:250px;
 	float: left;
 	margin-left: 43px;
 	/*margin-left:100px;*/
@@ -202,17 +202,24 @@ input[type=text] {
 }
 .shopInfo{
 	width: 200px;
-	height: 35px;
+	height: 40px;
 	text-align: center;
 	
 }
 .shopName{
+	display: inline-block;
 	color: #000000;
 	font-family: "黑体";
+	width: 85px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .shopPrice{
+	display: inline-block;
 	color: #f94b6c;
+
 }
 .left{
 	color:#01AFBE;

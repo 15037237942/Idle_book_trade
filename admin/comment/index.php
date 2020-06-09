@@ -5,7 +5,7 @@
      $sql="select comment.*,user.username,book.name from comment,user,book where comment.user_id=user.id and comment.book_id=book.id";
      $rst=mysqli_query($con,$sql);
 
-     $size = 4;
+     $size = 5;
      $hangnum = mysqli_num_rows($rst);
      if($hangnum == 0){
         echo "暂无评论";

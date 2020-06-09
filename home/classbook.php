@@ -41,6 +41,7 @@
 	<link rel="stylesheet" href="public/css/index.css">
 </head>
 <body>
+<div class="all">
 	<div class="main">
 		<?php 
 			include 'header.php';
@@ -60,7 +61,7 @@
                 <div class="floorFooter2">
 
                 <?php
-                  $sqlBook = "select * from book where class_id = {$id} limit $start,$pagesize";
+                  $sqlBook = "select * from book where class_id = {$id} and book.shelf=1 limit $start,$pagesize";
                   $rstBook = mysqli_query($con,$sqlBook);
                   while($rowBook=mysqli_fetch_assoc($rstBook)){
                 ?>
@@ -104,10 +105,10 @@
 				</div>
 			</div>
 		</div>	
-
-		<?php 
-			include 'footer.php';
-		?>
-	</div>	
+   </div>           
+</div>	
+   <?php 
+		include 'footer.php';
+	?>
 </body>
 </html>

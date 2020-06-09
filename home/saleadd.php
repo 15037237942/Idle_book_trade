@@ -54,22 +54,25 @@
                   </tr>
                   <tr>
                     <td class="table-lable">定价:</td>
-                    <td><input type="text" pattern="[0-9]+[.]?[0-9]+" required name="oldprice" id="" class="input-text"><span class="require">*</span></td>
+                    <td><input type="text" pattern="[0-9]+[.]?[0-9]+" required name="oldprice" class="input-text"><span class="require">*</span></td>
                       
                     <td class="td-right table-lable">封面:</td>
                     <td class="file-box"><input type="file" required name="img"  class="input-file"></td>
                   </tr>
                   <tr>
                     <td class="table-lable">售价:</td>
-                    <td><input type="text" pattern="[0-9]+[.]?[0-9]+" required name="nowprice" id="" class="input-text"><span class="require">*</span></td>
-                          
-                    <td rowspan="3" class="td-right table-lable">简介:</td>
-                    <td rowspan="3" class="text-info"><textarea name='info' class="input-textarea" cols="25" rows="5"></textarea></td>                    
+                    <td><input type="text" pattern="[0-9]+[.]?[0-9]+" required name="nowprice" class="input-text"><span class="require">*</span></td>
+
+                    <td class="table-lable">地址:</td>
+                    <td><input type="text" name="book_address" class="input-text"></td>                            
                   </tr>
                   <tr>
                     <td class="table-lable">数量:</td>
-                    <td><input type="text" value="1" name="stock" id="" class="input-text"></td>                    
-                  </tr>
+                    <td><input type="text" value="1" name="stock" class="input-text"></td>  
+
+                    <td rowspan="2" class="td-right table-lable">简介:</td>
+                    <td rowspan="2" class="text-info"><textarea name='info' class="input-textarea" cols="25" rows="4"></textarea></td>               
+                  </tr> 
                   <tr>
                     <td class="td-right table-lable">销量:</td>
                     <td><input type="text" value="1" name="sales" id="" class="input-text"></td>
