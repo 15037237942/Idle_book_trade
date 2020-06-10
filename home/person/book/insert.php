@@ -31,7 +31,7 @@ if(move_uploaded_file($src,$dst)){
 
     thumb($dst,220,220);
     $img = basename($dst);
-    $sql = "insert into book(name,writer,oldprice,nowprice,stock,sales,shelf,info,class_id,supplier,img) 
+    $sql = "insert into book(name,writer,oldprice,nowprice,stock,sales,shelf,info,class_id,supplier,img,book_address) 
     values('{$bookname}','{$writer}','{$oldprice}','{$nowprice}','{$stock}','{$sales}','{$shelf}',
     '{$info}','{$class_id}','{$supplier}','{$img}','{$book_address}')";
 
